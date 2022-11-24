@@ -14,12 +14,10 @@ int main ()
     std::cout << "====================================" << std::endl;
 
     dog.set_name("Max");
-    dog.set_id(123456);
     dog.set_breed("Doberman");
     dog.set_color("Black");
 
     cat.set_name("Oliver");
-    cat.set_id(412254);
     cat.set_breed("Bombay");
     cat.set_color("Black");
 

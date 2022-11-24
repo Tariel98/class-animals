@@ -3,8 +3,10 @@
 
 Animals::Animals()
         : m_name("")
-        , m_id(0)
-            {}
+        {
+        }
+
+int Animals::m_id = 0;
 
 void Animals::toFeed()
 {
@@ -26,10 +28,6 @@ std::string Animals::get_name()
     return m_name;
 }
 
-void Animals::set_id(int id)
-{
-    m_id = id; 
-}
 
 int Animals::get_id()
 {
@@ -40,7 +38,9 @@ Dog::Dog()
     : Animals()
     , m_breed("")
     , m_color("")
-    {}
+    {
+        m_id ++;
+    }
 
 void Dog::toFeed()
 {
@@ -72,9 +72,10 @@ std::string Dog::get_color()
     return m_color;
 }
 
-Cat::Cat()
-    :Dog() 
-    {}
+Cat::Cat() 
+    :Dog()
+    {
+    }
 
 void Cat::toFeed()
 {

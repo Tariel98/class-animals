@@ -11,12 +11,11 @@ class Animals
         virtual void makeSound();
         void set_name(std::string);
         std::string get_name();
-        void set_id(int);
         int get_id();
 
     protected:
         std::string m_name;
-        int m_id;
+        static int m_id;
 };
 
 
