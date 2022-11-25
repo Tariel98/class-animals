@@ -6,6 +6,16 @@ int main ()
     Dog dog;
     Cat cat;
     Dog dog1;
+    
+    std::cout << "====================================" << std::endl;
+
+    std::cout << "|  Base* catt = new Cat | : ";
+    Animals* catt = new Cat;
+    catt->toFeed();
+
+    std::cout << "|  Base* dogg = new Dog | : ";
+    Animals* dogg = new Dog;
+    dogg->toFeed();
 
     std::cout << "====================================" << std::endl;
     dog.toFeed();

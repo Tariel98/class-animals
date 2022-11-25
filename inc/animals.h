@@ -19,7 +19,7 @@ class Animals
         int m_id;
 };
 
-
+ 
 class Dog : public Animals
 {
     public:
