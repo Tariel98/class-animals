@@ -3,10 +3,9 @@
 
 Animals::Animals()
         : m_name("")
+        , m_id(0)
         {
         }
-
-int Animals::m_id = 0;
 
 void Animals::toFeed()
 {
@@ -16,6 +15,10 @@ void Animals::toFeed()
 void Animals::makeSound()
 {
     std::cout << "Sound animal" << std::endl;
+}
+
+void Animals::set_id(int id){
+    m_id = id;
 }
 
 void Animals::set_name(std::string name)
@@ -31,6 +34,7 @@ std::string Animals::get_name()
 
 int Animals::get_id()
 {
+    this->m_id++;
     return m_id;
 }
 
@@ -39,7 +43,6 @@ Dog::Dog()
     , m_breed("")
     , m_color("")
     {
-        m_id ++;
     }
 
 void Dog::toFeed()
